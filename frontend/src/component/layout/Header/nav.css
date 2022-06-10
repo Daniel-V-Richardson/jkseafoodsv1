@@ -1,0 +1,53 @@
+nav {
+  background: rgba(0, 0, 0, 0.726);
+  width: max-content;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  display: none;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+.nav-icon {
+  padding: 0.9rem;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+}
+
+.nav-icon:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 990px) {
+  nav {
+    display: flex;
+    
+  }
+  .nav-icon {
+    padding: 0.1rem;
+    border-radius: 50%;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  nav {
+    bottom: 0;
+    display: flex;
+  }
+  .nav-icon {
+    padding: 0.1rem;
+    border-radius: 50%;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+  }
+}

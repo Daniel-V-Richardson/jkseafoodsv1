@@ -1,0 +1,189 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.banner-part>h1 {
+  padding-top: 150px;
+  margin: 5vmax;
+  margin-bottom: 0%;
+  text-align: center;
+  font: 600 4.5vmax "Roboto";
+}
+
+.banner-part>p {
+  margin-top: 0%;
+  text-align: center;
+  margin-bottom: 3vmax;
+  font: 2.5vmax "Roboto";
+}
+
+.banner-part>a>button {
+  margin-bottom: 5vmax;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: rgba(202, 202, 202, 0.555);
+  font: 600 4.5vmax "Roboto";
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  padding-top: 200px;
+}
+
+.banner-part>a>button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 2.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: flex-end;
+  border-radius: 20px;
+  align-items: center;
+  color: rgb(48, 48, 48);
+  text-align: center;
+  width: 100%;
+  max-height: 400px;
+  min-width: 80px;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  margin: 1vmax;
+  overflow: hidden;
+  width: 20%;
+  box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25),
+    0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+  transition: all ease 200ms;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.productCard>div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.productCard>p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard>span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12),
+    0 8px 32px -8px hsla(0, 0%, 0%, 0.14),
+    0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+}
+
+.topScroll {
+  position: relative;
+  text-align: center;
+
+}
+
+.topScroll>button {
+  font-size: 3rem;
+  cursor: pointer;
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    margin: 2vmax auto;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .productCard {
+    min-width: 150px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    margin: 0.5vmax;
+    margin-bottom: 1.5vmax;
+    overflow: hidden;
+    width: 30%;
+    padding-bottom: 0.5vmax;
+  }
+
+  .banner-part>h1 {
+    padding-top: 100px;
+    font: 600 7vmax "Roboto";
+  }
+
+  .banner-part>p {
+    font: 300 2.5vmax "Roboto";
+  }
+
+  .banner-part>a>button {
+    padding-top: 200px;
+    font: 800 5vmax "Roboto";
+  }
+
+  .homeHeading {
+    font-size: 2.4vmax;
+  }
+
+  .productCard>p {
+    font-size: 2.3vmax;
+  }
+
+  .productCard>div {
+    margin: 1vmax;
+    display: block;
+  }
+
+  .productCard>span {
+    font-size: 2.3vmax;
+  }
+
+  .productCard>div>span {
+    margin: 0 0.2vmax;
+    font: 300 2.4vmax "Roboto";
+  }
+}
